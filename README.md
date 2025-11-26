@@ -34,17 +34,8 @@ source ynov_air/bin/activate
 
 Une fois activé, vous verrez `(ynov_air)` apparaître au début de votre ligne de commande.
 
-### 3. Installer les dépendances
 
-Installez tous les packages Python nécessaires listés dans le fichier `requirements.txt` :
-
-```bash
-pip install -r requirements.txt
-```
-
-Cette étape peut prendre quelques minutes selon le nombre de dépendances.
-
-### 4. Créer les migrations de base de données
+### 3. Créer les migrations de base de données
 
 Les migrations permettent de créer ou mettre à jour la structure de votre base de données :
 
@@ -54,7 +45,7 @@ python manage.py makemigrations
 
 Cette commande génère les fichiers de migration basés sur vos modèles Django.
 
-### 5. Appliquer les migrations
+### 4. Appliquer les migrations
 
 Appliquez les migrations pour créer les tables dans la base de données :
 
@@ -62,7 +53,7 @@ Appliquez les migrations pour créer les tables dans la base de données :
 python manage.py migrate
 ```
 
-### 6. Lancer le serveur de développement
+### 5. Lancer le serveur de développement
 
 Démarrez le serveur Django :
 
