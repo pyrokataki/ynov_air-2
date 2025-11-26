@@ -1,0 +1,19 @@
+{% extends 'flights/base.html' %}
+
+{% block title %}Ynov Air - Annulation de la réservation {% endblock %}
+
+
+{% block content %}
+
+<form method="POST" class="booking-form">
+        {% csrf_token %}
+        <h3>Annulation de la réservation {{booking.booking_reference}} </h3>
+
+        <div class="form-group">
+            <label for="raison">Raison d'annulation *</label>
+            <input type="text" name="raison" value="{{ Annulation.reason }}" id="raison" placeholder="Raison de l'annulation de la réservation..." required>
+        </div><br>
+        <button type="submit" class="btn btn-primary btn-lg">Confirmer la réservation</button>
+    </form>
+
+{% endblock %}
